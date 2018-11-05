@@ -1,0 +1,26 @@
+@charset "ttf-8";
+
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 640px以下 */
+@media screen and (min-width:641px){
+    body{
+        background-color: green;
+    }
+}
+
+/* 981px以上 */
+@media screen and (min-width:981px){
+   body{
+       background-color: blue;
+   }
+}
+@media screen and (orientation:portrait){
+    body:after {
+        content: "横長";
+    }
+ }
