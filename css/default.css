@@ -29,3 +29,39 @@ footer{
   background-color: blue;
   text-align: center;
 }
+@media screen and (min-width:641px){
+  aside{
+    width: calc(50% - 20%);
+    float:left;
+  }
+  #side:after{
+    /* clearfix */
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
+
+@media screen and (min-width:1025px){
+  #main{
+    max-width: 1024px;
+    margin: auto;
+  }
+  section{
+    width: calc(70% - 20%);
+    fl0at:left;
+  }
+  #side{
+    width: calc(1024% - 718px);
+    fl0at:left;
+  }
+  aside{
+    width: calc(100% - 20px);
+  }
+  #main:after{
+    /* clearfix */
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
